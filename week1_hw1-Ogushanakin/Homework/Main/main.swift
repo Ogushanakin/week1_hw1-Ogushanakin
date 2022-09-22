@@ -9,64 +9,9 @@ import Foundation
 
 // MARK: - TÜM ÜRÜNLERİ LİSTELEME
 
-
-print("=====================PROTEİN TOZLARI========================")
-
-proteinTozuListesi.append(optimumWheyProtein)
-proteinTozuListesi.append(weiderPremiumWheyProtein)
-proteinTozuListesi.append(weiderPremiumIsolateProtein)
-proteinTozuListesi.append(muscleTechWheyProtein)
-proteinTozuListesi.append(hardlineWhey3Matrix)
-proteinTozuListesi.append(bigJoyWheyClassic)
-proteinTozuListesi.append(olimpWheyProteinComplex)
-
-for p in proteinTozuListesi {
-    print("***************************")
-    print("Ürün İsim   : \(p.adi!)")
-    print("Fiyat : \(p.fiyat!)TL")
-    print("Ürün Miktar   : \(p.miktar!)gram")
-    print("Protein Türü : \(p.proteinTuru!.tur!)")
-    print("İçarik Tipi : \(p.proteinTuru!.icerikTipi!)")
-}
-
-print("=====================AMİNO ASİTLER========================")
-
-aminoAsitlerListesi.append(olimpBcaaExplode)
-aminoAsitlerListesi.append(weiderPremiumBcaa)
-aminoAsitlerListesi.append(hardlineBcaaFusion)
-aminoAsitlerListesi.append(hardlineAminoFullTablet)
-aminoAsitlerListesi.append(optimumGoldStandardBcaa)
-aminoAsitlerListesi.append(olimpArgiPower)
-
-for a in aminoAsitlerListesi {
-    print("***************************")
-    print("Ürün İsim   : \(a.adi!)")
-    print("Fiyat : \(a.fiyat!)TL")
-    print("Ürün Miktar   : \(a.miktar!)gram")
-    print("Protein Türü : \(a.aminoAsitTur!.tur!)")
-    print("İçarik Tipi : \(a.aminoAsitTur!.icerikTipi!)")
-}
-
-print("====================VİTAMİN & MİNERALLER=========================")
-
-vitaminlerListesi.append(bigJoyZMA)
-vitaminlerListesi.append(bigJoySportsMultibig)
-vitaminlerListesi.append(hardlineVitaminMineral)
-vitaminlerListesi.append(optimumOptimen)
-vitaminlerListesi.append(olimpGoldOmega3)
-
-for v in vitaminlerListesi {
-    print("***************************")
-    print("Ürün İsim   : \(v.adi!)")
-    print("Fiyat : \(v.fiyat!)TL")
-    print("Ürün Miktar   : \(v.miktar!)gram")
-    print("Protein Türü : \(v.vitaminTur!.tur!)")
-    print("İçarik Tipi : \(v.vitaminTur!.icerikTipi!)")
-}
-
-print("///////////////////////////////=============================================\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\")
-print("========================================ÜRÜN LİSTESİ İÇİN YUKARI KAYDIRIN=======================================")
-print("///////////////////////////////=============================================\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\")
+proteinTozlarıListeleme()
+aminoAsitlerListeleme()
+vitaminMineralerListeleme()
 
 
 // MARK: - Kullanıcı Seçimi ve Ürün Paket Kombinasyonları
@@ -74,13 +19,29 @@ print("///////////////////////////////==========================================
 var sepetTutari: Int?
 
 enum Kullanıcı {
-    case Student, JrDeveloper, SeniorDeveloper
+    case student, JrDeveloper, SeniorDeveloper, hatali
 }
-var kullanici = Kullanıcı.SeniorDeveloper
+
+print("1-Student Paket \n2-JR. Developer Paket \n3-Senior Developer Paket \nSeçiminizi Giriniz:")
+
+var kullanici = Kullanıcı.student
+
+let input = readLine()
+let secim = Int(input!)
+
+if secim == 1 {
+    kullanici = Kullanıcı.student
+} else if secim == 2 {
+    kullanici = Kullanıcı.JrDeveloper
+} else if secim == 3 {
+    kullanici = Kullanıcı.SeniorDeveloper
+} else {
+    kullanici = Kullanıcı.hatali
+}
 
 switch kullanici {
     
-case .Student:
+case .student:
         let studentPaketi: [String?] = [bigJoyWheyClassic.adi!, hardlineVitaminMineral.adi!, bigJoyZMA.adi!]
         let studentPaketi2: [Int?] = [bigJoyWheyClassic.fiyat!, hardlineVitaminMineral.fiyat!, bigJoyZMA.fiyat!]
         sepetTutari = bigJoyWheyClassic.fiyat! + hardlineVitaminMineral.fiyat! + bigJoyZMA.fiyat!
@@ -90,7 +51,9 @@ case .Student:
         print("Ürün İsim   : \(v!)")
         print("Fiyat : \(i!)TL")
     }
-        print("Size uygun ürünlerin toplam fiyatı: \(sepetTutari!)TL'dir.")
+        print("Size uygun ürünlerin toplam fiyatı: \(sepetTutari!)TL'dir.\nÖdemek yapmak için enter'a basın.")
+    _ = readLine()
+    print("Tüm paran bitti ay sonuna kadar balık kraker ve bunları tüketebilirsin. :(")
     
 case .JrDeveloper:
     let jRDeveloperPaketi: [String?] = [weiderPremiumWheyProtein.adi!, hardlineBcaaFusion.adi!, bigJoySportsMultibig.adi!, bigJoyZMA.adi!]
@@ -103,6 +66,8 @@ case .JrDeveloper:
         print("Fiyat : \(i!)TL")
     }
         print("Size uygun ürünlerin toplam fiyatı: \(sepetTutari!)TL'dir.")
+    _ = readLine()
+    print("Ödemen başarıyla alındı.İyi sporlar dileriz.Unutma ki besin takviyeleri dengeli bir beslenme planıyla beraber iyi sonuçlar verir.")
    
 case .SeniorDeveloper:
     let seniorDeveloperPaketi: [String?] = [weiderPremiumIsolateProtein.adi!, weiderPremiumBcaa.adi!, optimumOptimen.adi!, olimpArgiPower.adi!]
@@ -115,4 +80,14 @@ case .SeniorDeveloper:
         print("Fiyat : \(i!)TL")
     }
         print("Size uygun ürünlerin toplam fiyatı: \(sepetTutari!)TL'dir.")
+    _ = readLine()
+    print("Tebrikler Senior Developer paketi avantajlarından yararlandın ve ödemen başarıyla alındı.Fırsatları kaçırmamak için bizi takip etmeyi unutma.İyi sporlar.")
+    
+case .hatali:
+    print("Hatalı giriş yaptın. Programı yeniden başlatın ve 1, 2 veya 3 rakamlarını girerek enter tuşuna basın.")
 }
+
+
+
+
+
