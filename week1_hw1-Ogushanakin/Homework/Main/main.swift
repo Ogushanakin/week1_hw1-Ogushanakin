@@ -76,7 +76,7 @@ var sepetTutari: Int?
 enum Kullanıcı {
     case Student, JrDeveloper, SeniorDeveloper
 }
-var kullanici = Kullanıcı.JrDeveloper
+var kullanici = Kullanıcı.SeniorDeveloper
 
 switch kullanici {
     
