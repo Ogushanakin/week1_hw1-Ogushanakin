@@ -56,6 +56,15 @@ func vitaminMineralerListeleme() {
         print("Protein Türü : \(v.vitaminTur!.tur!)")
         print("İçarik Tipi : \(v.vitaminTur!.icerikTipi!)")
     }
+}
+
+
+func anabolicSteroidListele() {
+    
+    print("====================Anabolik Steroid=========================")
+    
+    print("Ürün Adı : \(decaDurabolin.urunAd)")
+    print("Ürün Fiyat : \(decaDurabolin.fiyat!)")
     
     print("///////////////////////////////=============================================\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\")
     print("========================================ÜRÜN LİSTESİ İÇİN YUKARI KAYDIRIN=======================================")

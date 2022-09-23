@@ -73,3 +73,6 @@ let olimpGoldOmega3 = Vitamin(adi: "Olimp Gold Omega-3", vitaminTur: balikYag, m
                               fiyat: 290, miktar: 120)
 
 
+// MARK: - Anabolik Steroidler
+
+let decaDurabolin = anabolicSteroid(urunAd: "Deca-Durabolin", fiyat: 5000)

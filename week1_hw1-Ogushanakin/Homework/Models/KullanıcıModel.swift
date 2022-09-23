@@ -8,5 +8,5 @@
 import Foundation
 
 enum Kullanıcı {
-    case student, JrDeveloper, SeniorDeveloper, hatali
+    case student, JrDeveloper, SeniorDeveloper, CristianoRonaldo, hatali
 }

@@ -29,13 +29,17 @@ aminoAsitlerListeleme()
 print("Vitamin ve Mineraler listesine ulaşmak için enter'a basınız.")
 let _ = readLine()
 vitaminMineralerListeleme()
+print("Anabolik Steroidler listesine ulaşmak için enter'a basınız.")
+let _ = readLine()
+anabolicSteroidListele()
+
 
 
 // MARK: - Kullanıcı Seçimi ve Ürün Paket Kombinasyonları
 
 var sepetTutari: Int?
 
-print("1-Student Paket \n2-JR. Developer Paket \n3-Senior Developer Paket \nSeçiminizi Giriniz:")
+print("1-Student Paket \n2-JR. Developer Paket \n3-Senior Developer Paket \n4-Cristiano Ronaldo\nSeçiminizi Giriniz:")
 
 var kullanici = Kullanıcı.student
 
@@ -48,7 +52,9 @@ if secim == 1 {
     kullanici = Kullanıcı.JrDeveloper
 } else if secim == 3 {
     kullanici = Kullanıcı.SeniorDeveloper
-} else {
+}else if secim == 4 {
+    kullanici = Kullanıcı.CristianoRonaldo
+}else {
     kullanici = Kullanıcı.hatali
 }
 
@@ -95,6 +101,9 @@ case .SeniorDeveloper:
         print("Size uygun ürünlerin toplam fiyatı: \(sepetTutari!)TL'dir.\nÖdemek yapmak için enter'a basın.")
     _ = readLine()
     print("Tebrikler Senior Developer paketi avantajlarından yararlandın ve ödemen başarıyla alındı.Fırsatları kaçırmamak için bizi takip etmeyi unutma.İyi sporlar.")
+    
+case .CristianoRonaldo:
+    decaDurabolin.mesaj()
     
 case .hatali:
     print("Hatalı giriş yaptın. Programı yeniden başlatın ve 1, 2 veya 3 rakamlarını girerek enter tuşuna basın.")

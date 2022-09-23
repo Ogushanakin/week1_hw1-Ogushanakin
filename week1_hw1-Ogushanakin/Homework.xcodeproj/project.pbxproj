@@ -15,6 +15,7 @@
 		713F62C528DBACD600F9D2D1 /* VitaminlerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713F62C428DBACD600F9D2D1 /* VitaminlerModel.swift */; };
 		71455D7028DD8F4000354935 /* KullanıcıModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71455D6F28DD8F4000354935 /* KullanıcıModel.swift */; };
 		719503B728DD891E0096CBC7 /* SupplementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719503B628DD891E0096CBC7 /* SupplementModel.swift */; };
+		71C5E8E028DDBC7400DF8C27 /* SteroidlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C5E8DF28DDBC7400DF8C27 /* SteroidlerProtocol.swift */; };
 		71D06B6028DC9FAB00270E59 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D06B5F28DC9FAB00270E59 /* Functions.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		713F62C428DBACD600F9D2D1 /* VitaminlerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitaminlerModel.swift; sourceTree = "<group>"; };
 		71455D6F28DD8F4000354935 /* KullanıcıModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KullanıcıModel.swift"; sourceTree = "<group>"; };
 		719503B628DD891E0096CBC7 /* SupplementModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplementModel.swift; sourceTree = "<group>"; };
+		71C5E8DF28DDBC7400DF8C27 /* SteroidlerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteroidlerProtocol.swift; sourceTree = "<group>"; };
 		71D06B5F28DC9FAB00270E59 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +93,7 @@
 				713F62C228DBA8AE00F9D2D1 /* AminoAsitModel.swift */,
 				713F62C428DBACD600F9D2D1 /* VitaminlerModel.swift */,
 				71455D6F28DD8F4000354935 /* KullanıcıModel.swift */,
+				71C5E8DF28DDBC7400DF8C27 /* SteroidlerProtocol.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 				713F62BF28DB984600F9D2D1 /* ProteinTozuModel.swift in Sources */,
 				719503B728DD891E0096CBC7 /* SupplementModel.swift in Sources */,
 				713F62C528DBACD600F9D2D1 /* VitaminlerModel.swift in Sources */,
+				71C5E8E028DDBC7400DF8C27 /* SteroidlerProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
