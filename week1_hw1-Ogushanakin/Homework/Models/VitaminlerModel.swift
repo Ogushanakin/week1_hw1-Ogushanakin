@@ -7,34 +7,14 @@
 
 import Foundation
 
-class VitaminTur {
-    let tur: String?
-    let icerikTipi: String?
-    
-    init(tur: String?, icerikTipi: String?) {
-        self.tur = tur
-        self.icerikTipi = icerikTipi
-    }
-}
-
-let kompleksVitamin = VitaminTur(tur: "Kompleks Vitamin",
-                                 icerikTipi: "Tablet")
-let zmaMineraller = VitaminTur(tur: "Zma & Mineraller",
-                               icerikTipi: "Tablet")
-let balikYag = VitaminTur(tur: "Balık Yağ",
-                          icerikTipi: "Tablet")
-let antioksidan = VitaminTur(tur: "Antioksidan",
-                             icerikTipi: "Tablet")
-
-
 class Vitamin {
     let adi: String?
-    let vitaminTur: VitaminTur?
+    let vitaminTur: Supplement?
     let marka: Markalar?
     let fiyat: Int?
     let miktar: Int?
     
-    init(adi: String?, vitaminTur: VitaminTur?, marka: Markalar?, fiyat: Int?, miktar: Int?) {
+    init(adi: String?, vitaminTur: Supplement?, marka: Markalar?, fiyat: Int?, miktar: Int?) {
         self.adi = adi
         self.vitaminTur = vitaminTur
         self.marka = marka

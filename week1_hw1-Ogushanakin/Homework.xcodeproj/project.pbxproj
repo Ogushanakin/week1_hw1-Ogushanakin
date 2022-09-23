@@ -13,6 +13,7 @@
 		713F62C128DB9B7A00F9D2D1 /* Markalar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713F62C028DB9B7A00F9D2D1 /* Markalar.swift */; };
 		713F62C328DBA8AE00F9D2D1 /* AminoAsitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713F62C228DBA8AE00F9D2D1 /* AminoAsitModel.swift */; };
 		713F62C528DBACD600F9D2D1 /* VitaminlerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713F62C428DBACD600F9D2D1 /* VitaminlerModel.swift */; };
+		719503B728DD891E0096CBC7 /* SupplementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719503B628DD891E0096CBC7 /* SupplementModel.swift */; };
 		71D06B6028DC9FAB00270E59 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D06B5F28DC9FAB00270E59 /* Functions.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		713F62C028DB9B7A00F9D2D1 /* Markalar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Markalar.swift; sourceTree = "<group>"; };
 		713F62C228DBA8AE00F9D2D1 /* AminoAsitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AminoAsitModel.swift; sourceTree = "<group>"; };
 		713F62C428DBACD600F9D2D1 /* VitaminlerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitaminlerModel.swift; sourceTree = "<group>"; };
+		719503B628DD891E0096CBC7 /* SupplementModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplementModel.swift; sourceTree = "<group>"; };
 		71D06B5F28DC9FAB00270E59 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				713F62C028DB9B7A00F9D2D1 /* Markalar.swift */,
+				719503B628DD891E0096CBC7 /* SupplementModel.swift */,
 				713F62BE28DB984600F9D2D1 /* ProteinTozuModel.swift */,
 				713F62C228DBA8AE00F9D2D1 /* AminoAsitModel.swift */,
 				713F62C428DBACD600F9D2D1 /* VitaminlerModel.swift */,
@@ -162,6 +165,7 @@
 				71D06B6028DC9FAB00270E59 /* Functions.swift in Sources */,
 				713F62C128DB9B7A00F9D2D1 /* Markalar.swift in Sources */,
 				713F62BF28DB984600F9D2D1 /* ProteinTozuModel.swift in Sources */,
+				719503B728DD891E0096CBC7 /* SupplementModel.swift in Sources */,
 				713F62C528DBACD600F9D2D1 /* VitaminlerModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

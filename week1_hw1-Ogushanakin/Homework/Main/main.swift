@@ -65,7 +65,7 @@ case .JrDeveloper:
         print("Ürün İsim   : \(v!)")
         print("Fiyat : \(i!)TL")
     }
-        print("Size uygun ürünlerin toplam fiyatı: \(sepetTutari!)TL'dir.")
+        print("Size uygun ürünlerin toplam fiyatı: \(sepetTutari!)TL'dir.\nÖdemek yapmak için enter'a basın.")
     _ = readLine()
     print("Ödemen başarıyla alındı.İyi sporlar dileriz.Unutma ki besin takviyeleri dengeli bir beslenme planıyla beraber iyi sonuçlar verir.")
    
@@ -79,7 +79,7 @@ case .SeniorDeveloper:
         print("Ürün İsim   : \(v!)")
         print("Fiyat : \(i!)TL")
     }
-        print("Size uygun ürünlerin toplam fiyatı: \(sepetTutari!)TL'dir.")
+        print("Size uygun ürünlerin toplam fiyatı: \(sepetTutari!)TL'dir.\nÖdemek yapmak için enter'a basın.")
     _ = readLine()
     print("Tebrikler Senior Developer paketi avantajlarından yararlandın ve ödemen başarıyla alındı.Fırsatları kaçırmamak için bizi takip etmeyi unutma.İyi sporlar.")
     
