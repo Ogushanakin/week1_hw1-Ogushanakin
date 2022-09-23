@@ -7,8 +7,6 @@
 
 import Foundation
 
-
-
 class AminoAsit {
     let adi: String?
     let aminoAsitTur: Supplement?

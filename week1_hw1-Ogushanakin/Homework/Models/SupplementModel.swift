@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 class Supplement {
     let tur: String?
     let icerikTipi: String?

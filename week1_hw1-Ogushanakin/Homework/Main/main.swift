@@ -7,20 +7,33 @@
 
 import Foundation
 
+// MARK: - GİRİŞ EKRANI
+
+print("SUPPLEMENT MARKET'E HOŞGELDİNİZ.KULLANICI BİLGİLERİNİZİ GİRİNİZ.\n")
+print("Ad:")
+let adInput = readLine()
+let ad = adInput
+print("Soyad:")
+let soyadInput = readLine()
+let soyad = soyadInput
+
+
 // MARK: - TÜM ÜRÜNLERİ LİSTELEME
 
+print("Merhaba, \(ad!) \(soyad!). Protein Tozları listesine ulaşmak için enter'a basınız.")
+let _ = readLine()
 proteinTozlarıListeleme()
+print("Aminoasitler listesine ulaşmak için enter'a basınız.")
+let _ = readLine()
 aminoAsitlerListeleme()
+print("Vitamin ve Mineraler listesine ulaşmak için enter'a basınız.")
+let _ = readLine()
 vitaminMineralerListeleme()
 
 
 // MARK: - Kullanıcı Seçimi ve Ürün Paket Kombinasyonları
 
 var sepetTutari: Int?
-
-enum Kullanıcı {
-    case student, JrDeveloper, SeniorDeveloper, hatali
-}
 
 print("1-Student Paket \n2-JR. Developer Paket \n3-Senior Developer Paket \nSeçiminizi Giriniz:")
 
