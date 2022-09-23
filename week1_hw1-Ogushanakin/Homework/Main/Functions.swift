@@ -10,14 +10,9 @@ import Foundation
 func proteinTozlarıListeleme() {
     
     print("=====================PROTEİN TOZLARI========================")
-
-    proteinTozuListesi.append(optimumWheyProtein)
-    proteinTozuListesi.append(weiderPremiumWheyProtein)
-    proteinTozuListesi.append(weiderPremiumIsolateProtein)
-    proteinTozuListesi.append(muscleTechWheyProtein)
-    proteinTozuListesi.append(hardlineWhey3Matrix)
-    proteinTozuListesi.append(bigJoyWheyClassic)
-    proteinTozuListesi.append(olimpWheyProteinComplex)
+    
+    proteinTozuListesi.append(contentsOf: [optimumWheyProtein, weiderPremiumWheyProtein, weiderPremiumIsolateProtein,
+                                           muscleTechWheyProtein, hardlineWhey3Matrix, bigJoyWheyClassic, olimpWheyProteinComplex])
 
     for p in proteinTozuListesi {
         print("***************************")
@@ -33,12 +28,8 @@ func aminoAsitlerListeleme() {
     
     print("=====================AMİNO ASİTLER========================")
 
-    aminoAsitlerListesi.append(olimpBcaaExplode)
-    aminoAsitlerListesi.append(weiderPremiumBcaa)
-    aminoAsitlerListesi.append(hardlineBcaaFusion)
-    aminoAsitlerListesi.append(hardlineAminoFullTablet)
-    aminoAsitlerListesi.append(optimumGoldStandardBcaa)
-    aminoAsitlerListesi.append(olimpArgiPower)
+    aminoAsitlerListesi.append(contentsOf: [olimpBcaaExplode, weiderPremiumBcaa, hardlineBcaaFusion,
+                                            hardlineAminoFullTablet, optimumGoldStandardBcaa, olimpArgiPower])
 
     for a in aminoAsitlerListesi {
         print("***************************")
@@ -54,11 +45,8 @@ func vitaminMineralerListeleme() {
     
     print("====================VİTAMİN & MİNERALLER=========================")
     
-    vitaminlerListesi.append(bigJoyZMA)
-    vitaminlerListesi.append(bigJoySportsMultibig)
-    vitaminlerListesi.append(hardlineVitaminMineral)
-    vitaminlerListesi.append(optimumOptimen)
-    vitaminlerListesi.append(olimpGoldOmega3)
+    vitaminlerListesi.append(contentsOf: [bigJoyZMA, bigJoySportsMultibig, hardlineVitaminMineral,
+                                          optimumOptimen, olimpGoldOmega3])
     
     for v in vitaminlerListesi {
         print("***************************")

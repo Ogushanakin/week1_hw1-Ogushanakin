@@ -40,7 +40,6 @@ let olimpWheyProteinComplex = ProteinTozu(adi: "Olimp Whey Protein Complex",
 
 
 
-
 // MARK: - Amino Asitler
 
 var aminoAsitlerListesi = [AminoAsit]()
