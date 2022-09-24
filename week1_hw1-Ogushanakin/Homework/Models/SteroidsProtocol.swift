@@ -7,13 +7,13 @@
 
 import Foundation
 
-protocol yasaDisi {
+protocol illegal {
     var urunAd: String { get set }
 
     func mesaj()
 }
 
-class anabolicSteroid: yasaDisi {
+class anabolicSteroid: illegal {
     var urunAd: String = "Deca-Durabolin"
     let fiyat: Int?
     

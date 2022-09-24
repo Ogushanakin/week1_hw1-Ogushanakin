@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		712A838328DBB5E400BC601D /* Urunler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712A838228DBB5E400BC601D /* Urunler.swift */; };
 		713F62B428DB904300F9D2D1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713F62B328DB904300F9D2D1 /* main.swift */; };
-		713F62BF28DB984600F9D2D1 /* ProteinTozuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713F62BE28DB984600F9D2D1 /* ProteinTozuModel.swift */; };
-		713F62C128DB9B7A00F9D2D1 /* Markalar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713F62C028DB9B7A00F9D2D1 /* Markalar.swift */; };
-		713F62C328DBA8AE00F9D2D1 /* AminoAsitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713F62C228DBA8AE00F9D2D1 /* AminoAsitModel.swift */; };
-		713F62C528DBACD600F9D2D1 /* VitaminlerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713F62C428DBACD600F9D2D1 /* VitaminlerModel.swift */; };
-		71455D7028DD8F4000354935 /* KullanıcıModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71455D6F28DD8F4000354935 /* KullanıcıModel.swift */; };
+		713F62BF28DB984600F9D2D1 /* ProteinPowderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713F62BE28DB984600F9D2D1 /* ProteinPowderModel.swift */; };
+		713F62C128DB9B7A00F9D2D1 /* Brands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713F62C028DB9B7A00F9D2D1 /* Brands.swift */; };
+		713F62C328DBA8AE00F9D2D1 /* AminoAcidModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713F62C228DBA8AE00F9D2D1 /* AminoAcidModel.swift */; };
+		713F62C528DBACD600F9D2D1 /* VitaminsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713F62C428DBACD600F9D2D1 /* VitaminsModel.swift */; };
+		71455D7028DD8F4000354935 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71455D6F28DD8F4000354935 /* UserModel.swift */; };
 		719503B728DD891E0096CBC7 /* SupplementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719503B628DD891E0096CBC7 /* SupplementModel.swift */; };
-		71C5E8E028DDBC7400DF8C27 /* SteroidlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C5E8DF28DDBC7400DF8C27 /* SteroidlerProtocol.swift */; };
+		71C5E8E028DDBC7400DF8C27 /* SteroidsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C5E8DF28DDBC7400DF8C27 /* SteroidsProtocol.swift */; };
 		71D06B6028DC9FAB00270E59 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D06B5F28DC9FAB00270E59 /* Functions.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,13 +36,13 @@
 		7133F66F28DBC4B3005160F5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		713F62B028DB904300F9D2D1 /* Homework */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Homework; sourceTree = BUILT_PRODUCTS_DIR; };
 		713F62B328DB904300F9D2D1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		713F62BE28DB984600F9D2D1 /* ProteinTozuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProteinTozuModel.swift; sourceTree = "<group>"; };
-		713F62C028DB9B7A00F9D2D1 /* Markalar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Markalar.swift; sourceTree = "<group>"; };
-		713F62C228DBA8AE00F9D2D1 /* AminoAsitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AminoAsitModel.swift; sourceTree = "<group>"; };
-		713F62C428DBACD600F9D2D1 /* VitaminlerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitaminlerModel.swift; sourceTree = "<group>"; };
-		71455D6F28DD8F4000354935 /* KullanıcıModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KullanıcıModel.swift"; sourceTree = "<group>"; };
+		713F62BE28DB984600F9D2D1 /* ProteinPowderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProteinPowderModel.swift; sourceTree = "<group>"; };
+		713F62C028DB9B7A00F9D2D1 /* Brands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brands.swift; sourceTree = "<group>"; };
+		713F62C228DBA8AE00F9D2D1 /* AminoAcidModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AminoAcidModel.swift; sourceTree = "<group>"; };
+		713F62C428DBACD600F9D2D1 /* VitaminsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitaminsModel.swift; sourceTree = "<group>"; };
+		71455D6F28DD8F4000354935 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		719503B628DD891E0096CBC7 /* SupplementModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplementModel.swift; sourceTree = "<group>"; };
-		71C5E8DF28DDBC7400DF8C27 /* SteroidlerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteroidlerProtocol.swift; sourceTree = "<group>"; };
+		71C5E8DF28DDBC7400DF8C27 /* SteroidsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteroidsProtocol.swift; sourceTree = "<group>"; };
 		71D06B5F28DC9FAB00270E59 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,13 +87,13 @@
 		7174212D28DC54EE00DA0466 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				713F62C028DB9B7A00F9D2D1 /* Markalar.swift */,
+				713F62C028DB9B7A00F9D2D1 /* Brands.swift */,
 				719503B628DD891E0096CBC7 /* SupplementModel.swift */,
-				713F62BE28DB984600F9D2D1 /* ProteinTozuModel.swift */,
-				713F62C228DBA8AE00F9D2D1 /* AminoAsitModel.swift */,
-				713F62C428DBACD600F9D2D1 /* VitaminlerModel.swift */,
-				71455D6F28DD8F4000354935 /* KullanıcıModel.swift */,
-				71C5E8DF28DDBC7400DF8C27 /* SteroidlerProtocol.swift */,
+				713F62BE28DB984600F9D2D1 /* ProteinPowderModel.swift */,
+				713F62C228DBA8AE00F9D2D1 /* AminoAcidModel.swift */,
+				713F62C428DBACD600F9D2D1 /* VitaminsModel.swift */,
+				71455D6F28DD8F4000354935 /* UserModel.swift */,
+				71C5E8DF28DDBC7400DF8C27 /* SteroidsProtocol.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -165,16 +165,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71455D7028DD8F4000354935 /* KullanıcıModel.swift in Sources */,
+				71455D7028DD8F4000354935 /* UserModel.swift in Sources */,
 				713F62B428DB904300F9D2D1 /* main.swift in Sources */,
 				712A838328DBB5E400BC601D /* Urunler.swift in Sources */,
-				713F62C328DBA8AE00F9D2D1 /* AminoAsitModel.swift in Sources */,
+				713F62C328DBA8AE00F9D2D1 /* AminoAcidModel.swift in Sources */,
 				71D06B6028DC9FAB00270E59 /* Functions.swift in Sources */,
-				713F62C128DB9B7A00F9D2D1 /* Markalar.swift in Sources */,
-				713F62BF28DB984600F9D2D1 /* ProteinTozuModel.swift in Sources */,
+				713F62C128DB9B7A00F9D2D1 /* Brands.swift in Sources */,
+				713F62BF28DB984600F9D2D1 /* ProteinPowderModel.swift in Sources */,
 				719503B728DD891E0096CBC7 /* SupplementModel.swift in Sources */,
-				713F62C528DBACD600F9D2D1 /* VitaminlerModel.swift in Sources */,
-				71C5E8E028DDBC7400DF8C27 /* SteroidlerProtocol.swift in Sources */,
+				713F62C528DBACD600F9D2D1 /* VitaminsModel.swift in Sources */,
+				71C5E8E028DDBC7400DF8C27 /* SteroidsProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

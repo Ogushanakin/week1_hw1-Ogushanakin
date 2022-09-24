@@ -1,5 +1,5 @@
 //
-//  AminoAsitModel.swift
+//  VitaminlerModel.swift
 //  Homework
 //
 //  Created by AKIN on 21.09.2022.
@@ -7,19 +7,22 @@
 
 import Foundation
 
-class AminoAsit {
+class Vitamin {
     let adi: String?
-    let aminoAsitTur: Supplement?
-    let marka: Markalar?
+    let vitaminTur: Supplement?
+    let marka: Brands?
     let fiyat: Int?
     let miktar: Int?
     
-    init(adi: String?, aminoAsitTur: Supplement?, marka: Markalar?, fiyat: Int?, miktar: Int?) {
+    init(adi: String?, vitaminTur: Supplement?, marka: Brands?, fiyat: Int?, miktar: Int?) {
         self.adi = adi
-        self.aminoAsitTur = aminoAsitTur
+        self.vitaminTur = vitaminTur
         self.marka = marka
         self.fiyat = fiyat
         self.miktar = miktar
     }
 }
+
+
+
 

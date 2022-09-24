@@ -11,101 +11,101 @@ import Foundation
 
 print("SUPPLEMENT MARKET'E HOŞGELDİNİZ.KULLANICI BİLGİLERİNİZİ GİRİNİZ.\n")
 print("Ad:")
-let adInput = readLine()
-let ad = adInput
+let nameInput = readLine()
+let name = nameInput
 print("Soyad:")
-let soyadInput = readLine()
-let soyad = soyadInput
+let lastnameInput = readLine()
+let lastName = lastnameInput
 
 
 // MARK: - TÜM ÜRÜNLERİ LİSTELEME
 
-print("Merhaba, \(ad!) \(soyad!). Protein Tozları listesine ulaşmak için enter'a basınız.")
+print("Merhaba, \(name!) \(lastName!). Protein Tozları listesine ulaşmak için enter'a basınız.")
 let _ = readLine()
-proteinTozlarıListeleme()
+proteinPowdersListShow()
 print("Aminoasitler listesine ulaşmak için enter'a basınız.")
 let _ = readLine()
-aminoAsitlerListeleme()
+aminoAcidsListShow()
 print("Vitamin ve Mineraler listesine ulaşmak için enter'a basınız.")
 let _ = readLine()
-vitaminMineralerListeleme()
+vitaminsMineralsListShow()
 print("Anabolik Steroidler listesine ulaşmak için enter'a basınız.")
 let _ = readLine()
-anabolicSteroidListele()
+anabolicSteroidListShow()
 
 
 
 // MARK: - Kullanıcı Seçimi ve Ürün Paket Kombinasyonları
 
-var sepetTutari: Int?
+var totalPrice: Int?
 
 print("1-Student Paket \n2-JR. Developer Paket \n3-Senior Developer Paket \n4-Cristiano Ronaldo\nSeçiminizi Giriniz:")
 
-var kullanici = Kullanıcı.student
+var user = User.student
 
 let input = readLine()
-let secim = Int(input!)
+let choice = Int(input!)
 
-if secim == 1 {
-    kullanici = Kullanıcı.student
-} else if secim == 2 {
-    kullanici = Kullanıcı.JrDeveloper
-} else if secim == 3 {
-    kullanici = Kullanıcı.SeniorDeveloper
-}else if secim == 4 {
-    kullanici = Kullanıcı.CristianoRonaldo
+if choice == 1 {
+    user = User.student
+} else if choice == 2 {
+    user = User.JrDeveloper
+} else if choice == 3 {
+    user = User.SeniorDeveloper
+}else if choice == 4 {
+    user = User.CristianoRonaldo
 }else {
-    kullanici = Kullanıcı.hatali
+    user = User.error
 }
 
-switch kullanici {
+switch user {
     
 case .student:
-        let studentPaketi: [String?] = [bigJoyWheyClassic.adi!, hardlineVitaminMineral.adi!, bigJoyZMA.adi!]
-        let studentPaketi2: [Int?] = [bigJoyWheyClassic.fiyat!, hardlineVitaminMineral.fiyat!, bigJoyZMA.fiyat!]
-        sepetTutari = bigJoyWheyClassic.fiyat! + hardlineVitaminMineral.fiyat! + bigJoyZMA.fiyat!
+        let studentPackage: [String?] = [bigJoyWheyClassic.name!, hardlineVitaminMineral.adi!, bigJoyZMA.adi!]
+        let studentPackage2: [Int?] = [bigJoyWheyClassic.price!, hardlineVitaminMineral.fiyat!, bigJoyZMA.fiyat!]
+        totalPrice = bigJoyWheyClassic.price! + hardlineVitaminMineral.fiyat! + bigJoyZMA.fiyat!
         print("Seçilen kullanıcı türü Öğrenci.")
-    for (v, i) in zip(studentPaketi, studentPaketi2) {
+    for (v, i) in zip(studentPackage, studentPackage2) {
         print("*************")
         print("Ürün İsim   : \(v!)")
         print("Fiyat : \(i!)TL")
     }
-        print("Size uygun ürünlerin toplam fiyatı: \(sepetTutari!)TL'dir.\nÖdemek yapmak için enter'a basın.")
+        print("Size uygun ürünlerin toplam fiyatı: \(totalPrice!)TL'dir.\nÖdemek yapmak için enter'a basın.")
     _ = readLine()
     print("Tüm paran bitti ay sonuna kadar balık kraker ve bunları tüketebilirsin. :(")
     
 case .JrDeveloper:
-    let jRDeveloperPaketi: [String?] = [weiderPremiumWheyProtein.adi!, hardlineBcaaFusion.adi!, bigJoySportsMultibig.adi!, bigJoyZMA.adi!]
-    let jRDeveloperPaketi2: [Int?] = [weiderPremiumWheyProtein.fiyat!, hardlineBcaaFusion.fiyat!, bigJoySportsMultibig.fiyat!, bigJoyZMA.fiyat!]
-        sepetTutari = weiderPremiumWheyProtein.fiyat! + hardlineBcaaFusion.fiyat! + bigJoySportsMultibig.fiyat! + bigJoyZMA.fiyat!
+    let jRDeveloperPackage: [String?] = [weiderPremiumWheyProtein.name!, hardlineBcaaFusion.name!, bigJoySportsMultibig.adi!, bigJoyZMA.adi!]
+    let jRDeveloperPackage2: [Int?] = [weiderPremiumWheyProtein.price!, hardlineBcaaFusion.price!, bigJoySportsMultibig.fiyat!, bigJoyZMA.fiyat!]
+        totalPrice = weiderPremiumWheyProtein.price! + hardlineBcaaFusion.price! + bigJoySportsMultibig.fiyat! + bigJoyZMA.fiyat!
         print("Seçilen kullanıcı türü JR.Developer.")
-    for (v, i) in zip(jRDeveloperPaketi, jRDeveloperPaketi2) {
+    for (v, i) in zip(jRDeveloperPackage, jRDeveloperPackage2) {
         print("*************")
         print("Ürün İsim   : \(v!)")
         print("Fiyat : \(i!)TL")
     }
-        print("Size uygun ürünlerin toplam fiyatı: \(sepetTutari!)TL'dir.\nÖdemek yapmak için enter'a basın.")
+        print("Size uygun ürünlerin toplam fiyatı: \(totalPrice!)TL'dir.\nÖdemek yapmak için enter'a basın.")
     _ = readLine()
     print("Ödemen başarıyla alındı.İyi sporlar dileriz.Unutma ki besin takviyeleri dengeli bir beslenme planıyla beraber iyi sonuçlar verir.")
    
 case .SeniorDeveloper:
-    let seniorDeveloperPaketi: [String?] = [weiderPremiumIsolateProtein.adi!, weiderPremiumBcaa.adi!, optimumOptimen.adi!, olimpArgiPower.adi!]
-    let seniorDeveloperPaketi2: [Int?] = [weiderPremiumIsolateProtein.fiyat!, weiderPremiumBcaa.fiyat!, optimumOptimen.fiyat!, olimpArgiPower.fiyat!]
-        sepetTutari = weiderPremiumIsolateProtein.fiyat! + weiderPremiumBcaa.fiyat! + optimumOptimen.fiyat! + olimpArgiPower.fiyat! + bigJoyZMA.fiyat!
+    let seniorDeveloperPackage: [String?] = [weiderPremiumIsolateProtein.name!, weiderPremiumBcaa.name!, optimumOptimen.adi!, olimpArgiPower.name!]
+    let seniorDeveloperPackage2: [Int?] = [weiderPremiumIsolateProtein.price!, weiderPremiumBcaa.price!, optimumOptimen.fiyat!, olimpArgiPower.price!]
+        totalPrice = weiderPremiumIsolateProtein.price! + weiderPremiumBcaa.price! + optimumOptimen.fiyat! + olimpArgiPower.price! + bigJoyZMA.fiyat!
         print("Seçilen kullanıcı türü Senior Developer.")
-    for (v, i) in zip(seniorDeveloperPaketi, seniorDeveloperPaketi2) {
+    for (v, i) in zip(seniorDeveloperPackage, seniorDeveloperPackage2) {
         print("*************")
         print("Ürün İsim   : \(v!)")
         print("Fiyat : \(i!)TL")
     }
-        print("Size uygun ürünlerin toplam fiyatı: \(sepetTutari!)TL'dir.\nÖdemek yapmak için enter'a basın.")
+        print("Size uygun ürünlerin toplam fiyatı: \(totalPrice!)TL'dir.\nÖdemek yapmak için enter'a basın.")
     _ = readLine()
     print("Tebrikler Senior Developer paketi avantajlarından yararlandın ve ödemen başarıyla alındı.Fırsatları kaçırmamak için bizi takip etmeyi unutma.İyi sporlar.")
     
 case .CristianoRonaldo:
     decaDurabolin.mesaj()
     
-case .hatali:
+case .error:
     print("Hatalı giriş yaptın. Programı yeniden başlatın ve 1, 2 veya 3 rakamlarını girerek enter tuşuna basın.")
 }
 

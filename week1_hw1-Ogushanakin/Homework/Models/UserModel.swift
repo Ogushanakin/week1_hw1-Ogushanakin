@@ -7,6 +7,6 @@
 
 import Foundation
 
-enum Kullanıcı {
-    case student, JrDeveloper, SeniorDeveloper, CristianoRonaldo, hatali
+enum User {
+    case student, JrDeveloper, SeniorDeveloper, CristianoRonaldo, error
 }

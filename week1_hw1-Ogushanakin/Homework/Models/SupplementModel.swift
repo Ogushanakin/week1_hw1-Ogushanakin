@@ -8,41 +8,41 @@
 import Foundation
 
 class Supplement {
-    let tur: String?
-    let icerikTipi: String?
+    let type: String?
+    let contentType: String?
     
-    init(tur: String?, icerikTipi: String?) {
-        self.tur = tur
-        self.icerikTipi = icerikTipi
+    init(type: String?, contentType: String?) {
+        self.type = type
+        self.contentType = contentType
     }
 }
 
-let wheyProtein = Supplement(tur: "Whey Protein",
-                                 icerikTipi: "Toz")
-let isolateProtein = Supplement(tur: "İsolate Protein",
-                                    icerikTipi: "Toz")
-let caseinProtein = Supplement(tur: "Casein Protein",
-                                   icerikTipi: "Toz")
-let kompleksProtein = Supplement(tur: "Kompleks Protein",
-                                     icerikTipi: "Saşe")
+let wheyProtein = Supplement(type: "Whey Protein",
+                                 contentType: "Toz")
+let isolateProtein = Supplement(type: "İsolate Protein",
+                                    contentType: "Toz")
+let caseinProtein = Supplement(type: "Casein Protein",
+                                   contentType: "Toz")
+let kompleksProtein = Supplement(type: "Kompleks Protein",
+                                     contentType: "Saşe")
 
 
 
-let bcaa = Supplement(tur: "Bcaa", icerikTipi: "Toz")
-let glutamin = Supplement(tur: "Glutamin",
-                                    icerikTipi: "Toz")
-let arjinin = Supplement(tur: "Arjinin",
-                                     icerikTipi: "Toz")
-let kompleksAminoAsit = Supplement(tur: "Kompleks Amino Asit",
-                                   icerikTipi: "Kapsül")
+let bcaa = Supplement(type: "Bcaa", contentType: "Toz")
+let glutamin = Supplement(type: "Glutamin",
+                                    contentType: "Toz")
+let arjinin = Supplement(type: "Arjinin",
+                                     contentType: "Toz")
+let kompleksAminoAsit = Supplement(type: "Kompleks Amino Asit",
+                                   contentType: "Kapsül")
 
 
 
-let kompleksVitamin = Supplement(tur: "Kompleks Vitamin",
-                                 icerikTipi: "Tablet")
-let zmaMineraller = Supplement(tur: "Zma & Mineraller",
-                               icerikTipi: "Tablet")
-let balikYag = Supplement(tur: "Balık Yağ",
-                          icerikTipi: "Tablet")
-let antioksidan = Supplement(tur: "Antioksidan",
-                             icerikTipi: "Tablet")
+let complexVitamin = Supplement(type: "Kompleks Vitamin",
+                                 contentType: "Tablet")
+let zmaMinerals = Supplement(type: "Zma & Mineraller",
+                               contentType: "Tablet")
+let fishOil = Supplement(type: "Balık Yağ",
+                          contentType: "Tablet")
+let antioksidan = Supplement(type: "Antioksidan",
+                             contentType: "Tablet")
