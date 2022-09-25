@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		712A838328DBB5E400BC601D /* Urunler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712A838228DBB5E400BC601D /* Urunler.swift */; };
+		712A838328DBB5E400BC601D /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712A838228DBB5E400BC601D /* Products.swift */; };
 		713F62B428DB904300F9D2D1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713F62B328DB904300F9D2D1 /* main.swift */; };
 		713F62BF28DB984600F9D2D1 /* ProteinPowderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713F62BE28DB984600F9D2D1 /* ProteinPowderModel.swift */; };
 		713F62C128DB9B7A00F9D2D1 /* Brands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713F62C028DB9B7A00F9D2D1 /* Brands.swift */; };
@@ -32,7 +32,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		712A838228DBB5E400BC601D /* Urunler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urunler.swift; sourceTree = "<group>"; };
+		712A838228DBB5E400BC601D /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
 		7133F66F28DBC4B3005160F5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		713F62B028DB904300F9D2D1 /* Homework */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Homework; sourceTree = BUILT_PRODUCTS_DIR; };
 		713F62B328DB904300F9D2D1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 			children = (
 				7174212E28DC54F100DA0466 /* Main */,
 				7174212D28DC54EE00DA0466 /* Models */,
-				712A838228DBB5E400BC601D /* Urunler.swift */,
+				712A838228DBB5E400BC601D /* Products.swift */,
 				7133F66F28DBC4B3005160F5 /* README.md */,
 			);
 			path = Homework;
@@ -167,7 +167,7 @@
 			files = (
 				71455D7028DD8F4000354935 /* UserModel.swift in Sources */,
 				713F62B428DB904300F9D2D1 /* main.swift in Sources */,
-				712A838328DBB5E400BC601D /* Urunler.swift in Sources */,
+				712A838328DBB5E400BC601D /* Products.swift in Sources */,
 				713F62C328DBA8AE00F9D2D1 /* AminoAcidModel.swift in Sources */,
 				71D06B6028DC9FAB00270E59 /* Functions.swift in Sources */,
 				713F62C128DB9B7A00F9D2D1 /* Brands.swift in Sources */,
