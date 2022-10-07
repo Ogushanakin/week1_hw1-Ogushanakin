@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Vitamin {
+struct Vitamin {
     let adi: String?
     let vitaminTur: Supplement?
     let marka: Brands?

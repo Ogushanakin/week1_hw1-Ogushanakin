@@ -7,7 +7,7 @@
 
 import Foundation
 
-class AminoAcid {
+struct AminoAcid {
     let name: String?
     let aminoAcidType: Supplement?
     let brand: Brands?

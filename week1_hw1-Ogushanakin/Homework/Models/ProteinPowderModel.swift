@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ProteinPowder {
+struct ProteinPowder {
     let name: String?
     let proteinType: Supplement?
     let brand: Brands?

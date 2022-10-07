@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Brands {
+struct Brands {
     let brandName: String?
     let origin: String?
     

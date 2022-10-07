@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Supplement {
+struct Supplement {
     let type: String?
     let contentType: String?
     

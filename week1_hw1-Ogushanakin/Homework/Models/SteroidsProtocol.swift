@@ -13,7 +13,7 @@ protocol illegal {
     func mesaj()
 }
 
-class anabolicSteroid: illegal {
+struct anabolicSteroid: illegal {
     var urunAd: String = "Deca-Durabolin"
     let fiyat: Int?
     
